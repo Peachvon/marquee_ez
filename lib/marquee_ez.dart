@@ -2,7 +2,6 @@ library marquee_ez;
 
 import 'package:flutter/material.dart';
 
-/// A Calculator.
 class MarqueeEZ extends StatefulWidget {
   const MarqueeEZ({
     super.key,

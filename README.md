@@ -18,7 +18,7 @@ Text Marquee
 
 ## Usage
 
-TODO:Use instead of Text widget
+Use instead of Text widget
 
 ```dart
 MarqueeEZ(text:"test",

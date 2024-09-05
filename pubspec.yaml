@@ -1,6 +1,6 @@
 name: marquee_ez
-description: "A new Flutter package project."
-version: 0.0.1
+description: "Text Marquee"
+version: 1.0.0
 homepage:
 
 environment:
