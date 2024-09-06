@@ -21,7 +21,8 @@ Text Marquee
 Use instead of Text widget
 
 ```dart
-MarqueeEZ(text:"test",
+MarqueeEZ(
+text:"test",
 width: 100,
 style: const TextStyle(
 color: Colors.red,

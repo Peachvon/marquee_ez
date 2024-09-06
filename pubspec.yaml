@@ -1,7 +1,8 @@
 name: marquee_ez
 description: "Text Marquee"
-version: 1.0.1
+version: 1.0.2
 homepage: https://github.com/Peachvon/marquee_ez
+repository: https://github.com/Peachvon/marquee_ez
 
 environment:
   sdk: ">=3.4.1 <4.0.0"
@@ -21,13 +22,13 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-  plugin:
-    platforms:
-      android:
-        package: com.peachvon.marquee_ez
-        pluginClass: MarqueeEZ
-      ios:
-        pluginClass: MarqueeEZ
+  # plugin:
+  #   platforms:
+  #     android:
+  #       package: com.peachvon.marquee_ez
+  #       pluginClass: MarqueeEZ
+  #     ios:
+  #       pluginClass: MarqueeEZ
 
   # To add assets to your package, add an assets section, like this:
   # assets:
