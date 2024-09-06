@@ -10,7 +10,7 @@ void main() {
         const MarqueeEZ(
           text: 'test',
           width: 100,
-          duration: Duration(seconds: 5),
+          milliseconds: 5000,
         ),
         Widget);
   });

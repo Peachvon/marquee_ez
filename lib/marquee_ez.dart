@@ -8,13 +8,13 @@ class MarqueeEZ extends StatefulWidget {
     required this.text,
     required this.width,
     this.style = const TextStyle(),
-    required this.duration,
+    required this.milliseconds,
   });
 
   final String text;
   final double width;
   final TextStyle style;
-  final Duration duration;
+  final int milliseconds;
   @override
   _MarqueeEZ createState() => _MarqueeEZ();
 }
@@ -67,7 +67,8 @@ class _MarqueeEZ extends State<MarqueeEZ> {
   void _animateTo(double deviceWidth, double textWidth) async {
     double target = deviceWidth + textWidth;
     await _controller.animateTo(target,
-        duration: widget.duration, curve: Curves.linear);
+        duration: Duration(milliseconds: widget.milliseconds),
+        curve: Curves.linear);
     _controller.jumpTo(0);
     _animateTo(deviceWidth, textWidth);
   }
