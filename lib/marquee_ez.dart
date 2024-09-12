@@ -69,8 +69,10 @@ class _MarqueeEZ extends State<MarqueeEZ> {
     await _controller.animateTo(target,
         duration: Duration(milliseconds: widget.milliseconds),
         curve: Curves.linear);
-    _controller.jumpTo(0);
-    _animateTo(deviceWidth, textWidth);
+    if (_controller.hasClients) {
+      _controller.jumpTo(0);
+      _animateTo(deviceWidth, textWidth);
+    }
   }
 
   @override
